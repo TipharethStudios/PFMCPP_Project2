@@ -107,6 +107,11 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  1)
  */
 
+    int getCatFood(int cost, bool inStock = true);
+{
+    ignoreUnused(cost, inStock);
+    return {}
+}
 /*
  2)
  */

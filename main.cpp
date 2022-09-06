@@ -16,11 +16,11 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of the 6 major primitive types available in C++  here:
  
- 
- 
- 
- 
- 
+int bool
+unsigned int
+float
+double
+char
  
  
  
@@ -64,7 +64,17 @@ void variableDeclarations()
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
-    
+  int age = 32
+    int numberOfStrings = 6
+    int optimalNumberOfGuitars = 2000
+
+    bool practicingGuitar = true
+    bool feedingCat = true
+    bool onABeach = false
+
+    unsigned int a = 1000
+    unsigned int  = 23432
+    unsigned int   
 
     
     ignoreUnused(number); //passing each variable declared to the ignoreUnused() function

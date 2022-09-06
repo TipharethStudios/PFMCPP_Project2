@@ -123,9 +123,9 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  3)
  */
-    float getPaycheckAmount(int hoursPerWeek = 40, float wagePerHour = 7.5f);
+    float getPaycheckAmount(bool workedAllWeek = True, float wagePerHour = 7.5f);
 {
-    ignoreUnused(hoursPerWeek, wagePerHour);
+    ignoreUnused(workedAllWeek, wagePerHour);
     return{};
 }
 /*
@@ -139,7 +139,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  5)
  */
-    int getNewShoes(char brandName, bool onSale = false, float totalCostWithTax = 99.01);
+    int getNewShoes(char brandName, bool onSale = false, float totalCostWithTax = 99.01f);
 {
     ignoreUnused(brandName, onSale, totalCostWithTax);
     return{};
@@ -155,15 +155,15 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  7)
  */
-    unsigned int getFood(char foodGrade, bool isFresh = false, int pricePerPound = 5);
+    unsigned int getFood(char foodGrade, bool isFresh = false, unsigned int amountAtStore = 65784);
 {
-    ignoreUnused(foodGrade, isFresh, pricePerPound);
+    ignoreUnused(foodGrade, isFresh, amountAtStore);
     return{};
 }
 /*
  8)
  */
-
+    int 
 /*
  9)
  */
@@ -192,19 +192,19 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    auto gotCatFood = getCatFood(32, true);
     //2)
-    
+    auto guitarStringInTune = isGuitarStringInTune(0.01f, a);
     //3)
-    
+    auto paycheckAmount = getPaycheckAmount(true, 7.5f);
     //4)
-    
+    auto isMicrophoneOn = isMicrophoneTurnedOn(true, 15.2f, false);
     //5)
-    
+    auto newShoes = getNewShoes(Converse, false, 99.01f);
     //6)
-    
+    auto monthlyProfit = getMonthlyProfit(1765.012, false);
     //7)
-    
+    auto gotFood = getFood(a, true, 22);
     //8)
     
     //9)

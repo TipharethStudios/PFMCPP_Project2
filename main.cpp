@@ -89,7 +89,7 @@ void variableDeclarations()
     char correctAnswer = c;
 
     
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, age, numberOfStrings, optimalNumberOfGuitars, practicingGuitar, feedingCat, onABeach, a, cost, amountRequired, hardDriveSpace, fuelEfficiency, distance, calories, cableLength, profit, playerOne, startingPosition, correctAnswer); //passing each variable declared to the ignoreUnused() function
 }
 
 /*

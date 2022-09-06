@@ -115,15 +115,23 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  2)
  */
-
+    bool isGuitarStringInTune(float centAmount = 0.01f, char = note);
+{
+    ignoreUnused(centAmount, note);
+    return{}
+}
 /*
  3)
  */
-
+    float getPaycheckAmount(int hoursPerWeek = 40, float wagePerHour = 7.5f);
+{
+    ignoreUnused(hoursPerWeek, wagePerHour);
+    return{}
+}
 /*
  4)
  */
-
+    bool isMicrophoneTurnedOn(bool phantomPower = true, )
 /*
  5)
  */

@@ -110,7 +110,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
     int getCatFood(int cost, bool inStock = true);
 {
     ignoreUnused(cost, inStock);
-    return {}
+    return {};
 }
 /*
  2)
@@ -118,7 +118,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
     bool isGuitarStringInTune(float centAmount = 0.01f, char = note);
 {
     ignoreUnused(centAmount, note);
-    return{}
+    return{};
 }
 /*
  3)
@@ -126,24 +126,40 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
     float getPaycheckAmount(int hoursPerWeek = 40, float wagePerHour = 7.5f);
 {
     ignoreUnused(hoursPerWeek, wagePerHour);
-    return{}
+    return{};
 }
 /*
  4)
  */
-    bool isMicrophoneTurnedOn(bool phantomPower = true, )
+    bool isMicrophoneTurnedOn(bool phantomPower = true, float gainAmount = 15.2f, bool clippingTheInterface = false);
+{
+    ignoreUnused(phantomPower, gainAmount, clippingTheInterface);
+    return{};
+}
 /*
  5)
  */
-
+    int getNewShoes(char brandName, bool onSale = false, float totalCostWithTax = 99.01);
+{
+    ignoreUnused(brandName, onSale, totalCostWithTax);
+    return{};
+}
 /*
  6)
  */
-
+    Float getTotalMonthlyProfit(double monthlyProfit, bool unexpectedExpenses = false);
+{
+    ignoreUnused(monthlyProfit, unexpectedExpenses);
+    return{};
+}
 /*
  7)
  */
-
+    unsigned int getFood(char foodGrade, bool isFresh = false, int pricePerPound = 5);
+{
+    ignoreUnused(foodGrade, isFresh, pricePerPound);
+    return{};
+}
 /*
  8)
  */

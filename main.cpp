@@ -163,11 +163,15 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  8)
  */
-    int 
+    int playMidi(char note, int velocity = 127);
+{
+    ignoreUnused(note, velocity);
+    return{};
+}
 /*
  9)
  */
-
+    bool isSignalPassingThrough(bool statusLightEng)
 /*
  10)
  */
@@ -204,9 +208,9 @@ int main()
     //6)
     auto monthlyProfit = getMonthlyProfit(1765.012, false);
     //7)
-    auto gotFood = getFood(a, true, 22);
+    auto currentFood = getFood(a, true, 22);
     //8)
-    
+    auto Midi = playMidi(a, 127);
     //9)
     
     //10)

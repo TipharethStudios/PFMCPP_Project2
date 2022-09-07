@@ -123,9 +123,9 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  3)
  */
-    float getPaycheckAmount(bool workedAllWeek = True, float wagePerHour = 7.5f);
+    float getPaycheckAmount(int hoursWorked, float wagePerHour = 20.5f);
 {
-    ignoreUnused(workedAllWeek, wagePerHour);
+    ignoreUnused(hoursWorked, wagePerHour);
     return{};
 }
 /*
@@ -163,7 +163,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  8)
  */
-    int playMidi(char note, int velocity = 127);
+    int playMidi(char note, int velocity);
 {
     ignoreUnused(note, velocity);
     return{};
@@ -171,11 +171,19 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  9)
  */
-    bool isSignalPassingThrough(bool statusLightEng)
+    bool isSignalPassingThrough(bool statusLightOn = false, int volumeLevel, bool bypassOff = false);
+{
+    ignoreUnused(statusLightOn, volumeLevel, bypassOff);
+    return{};
+}
 /*
  10)
  */
-
+   int getCoffee(int cupSize, bool hotTemp = True);
+{
+    ignoreUnused(cupSize, hotTemp);
+    return{};
+}
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
@@ -200,9 +208,9 @@ int main()
     //2)
     auto guitarStringInTune = isGuitarStringInTune(0.01f, a);
     //3)
-    auto paycheckAmount = getPaycheckAmount(true, 7.5f);
+    auto paycheckAmount = getPaycheckAmount(40, 20.5f);
     //4)
-    auto isMicrophoneOn = isMicrophoneTurnedOn(true, 15.2f, false);
+    auto MicrophoneOn = isMicrophoneTurnedOn(true, 15.2f, false);
     //5)
     auto newShoes = getNewShoes(Converse, false, 99.01f);
     //6)
@@ -210,11 +218,11 @@ int main()
     //7)
     auto currentFood = getFood(a, true, 22);
     //8)
-    auto Midi = playMidi(a, 127);
+    auto midi = playMidi(a, 127);
     //9)
-    
+    auto signalpassing = isSignalPassingThrough(true, 100, true);
     //10)
-    
+    auto gotcoffee = getCoffee(3, true);
     
     ignoreUnused(carRented);
     std::cout << "good to go!" << std::endl;

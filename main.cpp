@@ -107,79 +107,79 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  1)
  */
 
-    int getCatFood(int cost, bool inStock = true);
-{
+int getCatFood(int cost, bool inStock = true)
+{ 
     ignoreUnused(cost, inStock);
     return {};
 }
 /*
  2)
  */
-    bool isGuitarStringInTune(float centAmount = 0.01f, char note = 'a');
-{
+bool isGuitarStringInTune(float centAmount = 0.01f, char note = 'a')
+{ 
     ignoreUnused(centAmount, note);
     return{};
 }
 /*
  3)
  */
-    float getPaycheckAmount(int hoursWorked, float wagePerHour = 20.5f);
-{
+float getPaycheckAmount(int hoursWorked, float wagePerHour = 20.5f)
+{ 
     ignoreUnused(hoursWorked, wagePerHour);
     return{};
 }
 /*
  4)
  */
-    bool isMicrophoneTurnedOn(bool phantomPower = true, float gainAmount = 15.2f, bool clippingTheInterface = false);
-{
+bool isMicrophoneTurnedOn(bool phantomPower = true, float gainAmount = 15.2f, bool clippingTheInterface = false)
+{ 
     ignoreUnused(phantomPower, gainAmount, clippingTheInterface);
     return{};
 }
 /*
  5)
  */
-    void refillWater(int waterType, int amount);
-{
+void refillWater(int waterType, int amount)
+{ 
     ignoreUnused(waterType, amount);
 }
 /*
  6)
  */
-    float getTotalMonthlyProfit(double monthlyProfit, bool unexpectedExpenses = false);
-{
+float getTotalMonthlyProfit(double monthlyProfit, bool unexpectedExpenses = false)
+{ 
     ignoreUnused(monthlyProfit, unexpectedExpenses);
     return{};
 }
 /*
  7)
  */
-    unsigned int getFood(char foodGrade, bool isFresh = false, unsigned int amountAtStore = 65784);
-{
+unsigned int getFood(char foodGrade, bool isFresh = false, unsigned int amountAtStore = 65784)
+{ 
     ignoreUnused(foodGrade, isFresh, amountAtStore);
     return{};
 }
 /*
  8)
  */
-    int playMidi(char note, int velocity);
-{
+int playMidi(char note, int velocity)
+{ 
     ignoreUnused(note, velocity);
     return{};
 }
 /*
  9)
  */
-    bool isSignalPassingThrough(bool statusLightOn = false, int volumeLevel = 3, bool bypassOff = false);
-{
+bool isSignalPassingThrough(bool statusLightOn = false, int volumeLevel = 3, bool bypassOff = false)
+{ 
     ignoreUnused(statusLightOn, volumeLevel, bypassOff);
     return{};
 }
 /*
  10)
  */
-   int getCoffee(int cupSize, bool hotTemp = true);
-{
+int getCoffee(int cupSize, bool hotTemp = true)
+{ 
     ignoreUnused(cupSize, hotTemp);
     return{};
 }
@@ -203,11 +203,11 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    auto catFoodAmount = getCatFood(32, true);
+    auto catFoodAmount = getCatFood(1, true);
     //2)
     auto guitarStringInTune = isGuitarStringInTune(0.01f, 'a');
     //3)
-    auto paycheckAmount = getPaycheckAmount(40, 20.5f);
+    auto payCheckAmount = getPaycheckAmount(40, 20.5f);
     //4)
     auto microphoneOn = isMicrophoneTurnedOn(true, 15.2f, false);
     //5)
@@ -223,7 +223,7 @@ int main()
     //10)
     auto gotCoffee = getCoffee(3, true);
     
-    ignoreUnused(carRented);
+    ignoreUnused(carRented, catFoodAmount, guitarStringInTune, payCheckAmount, microphoneOn,totalMonthlyProfit, currentFood, midi, signalPassing, gotCoffee);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }

@@ -84,9 +84,9 @@ void variableDeclarations()
     double cableLength = 37.798;
     double profit = 32.9980;
 
-    char playerOne = p;
-    char startingPosition = a;
-    char correctAnswer = c;
+    char playerOne = 'p';
+    char startingPosition = 'a';
+    char correctAnswer = 'c';
 
     
     ignoreUnused(number, age, numberOfStrings, optimalNumberOfGuitars, practicingGuitar, feedingCat, onABeach, a, cost, amountRequired, hardDriveSpace, fuelEfficiency, distance, calories, cableLength, profit, playerOne, startingPosition, correctAnswer); //passing each variable declared to the ignoreUnused() function
@@ -115,7 +115,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  2)
  */
-    bool isGuitarStringInTune(float centAmount = 0.01f, char = note);
+    bool isGuitarStringInTune(float centAmount = 0.01f, char note = 'a');
 {
     ignoreUnused(centAmount, note);
     return{};
@@ -139,15 +139,14 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  5)
  */
-    int getNewShoes(char brandName, bool onSale = false, float totalCostWithTax = 99.01f);
+    void refillWater(int waterType, int amount);
 {
-    ignoreUnused(brandName, onSale, totalCostWithTax);
-    return{};
+    ignoreUnused(waterType, amount);
 }
 /*
  6)
  */
-    Float getTotalMonthlyProfit(double monthlyProfit, bool unexpectedExpenses = false);
+    float getTotalMonthlyProfit(double monthlyProfit, bool unexpectedExpenses = false);
 {
     ignoreUnused(monthlyProfit, unexpectedExpenses);
     return{};
@@ -171,7 +170,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  9)
  */
-    bool isSignalPassingThrough(bool statusLightOn = false, int volumeLevel, bool bypassOff = false);
+    bool isSignalPassingThrough(bool statusLightOn = false, int volumeLevel = 3, bool bypassOff = false);
 {
     ignoreUnused(statusLightOn, volumeLevel, bypassOff);
     return{};
@@ -179,7 +178,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  10)
  */
-   int getCoffee(int cupSize, bool hotTemp = True);
+   int getCoffee(int cupSize, bool hotTemp = true);
 {
     ignoreUnused(cupSize, hotTemp);
     return{};
@@ -204,25 +203,25 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    auto gotCatFood = getCatFood(32, true);
+    auto catFoodAmount = getCatFood(32, true);
     //2)
-    auto guitarStringInTune = isGuitarStringInTune(0.01f, a);
+    auto guitarStringInTune = isGuitarStringInTune(0.01f, 'a');
     //3)
     auto paycheckAmount = getPaycheckAmount(40, 20.5f);
     //4)
-    auto MicrophoneOn = isMicrophoneTurnedOn(true, 15.2f, false);
+    auto microphoneOn = isMicrophoneTurnedOn(true, 15.2f, false);
     //5)
-    auto newShoes = getNewShoes(Converse, false, 99.01f);
+    refillWater(1, 33);
     //6)
-    auto monthlyProfit = getMonthlyProfit(1765.012, false);
+    auto totalMonthlyProfit = getTotalMonthlyProfit(1765.012, false);
     //7)
-    auto currentFood = getFood(a, true, 22);
+    auto currentFood = getFood('a', true, 22);
     //8)
-    auto midi = playMidi(a, 127);
+    auto midi = playMidi('a', 127);
     //9)
-    auto signalpassing = isSignalPassingThrough(true, 100, true);
+    auto signalPassing = isSignalPassingThrough(true, 100, true);
     //10)
-    auto gotcoffee = getCoffee(3, true);
+    auto gotCoffee = getCoffee(3, true);
     
     ignoreUnused(carRented);
     std::cout << "good to go!" << std::endl;

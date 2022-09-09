@@ -16,11 +16,11 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of the 6 major primitive types available in C++  here:
  
- 
- 
- 
- 
- 
+int bool
+unsigned int
+float
+double
+char
  
  
  
@@ -64,10 +64,32 @@ void variableDeclarations()
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
-    
+    int age = 32;
+    int numberOfStrings = 6;
+    int optimalNumberOfGuitars = 2000;
+
+    bool practicingGuitar = true;
+    bool feedingCat = true;
+    bool onABeach = false;
+
+    unsigned int a = 1000;
+    unsigned int cost = 23432;
+    unsigned int amountRequired = 765980;
+
+    float hardDriveSpace = 233.1f;
+    float fuelEfficiency = 28.3f;
+    float distance = 33.7f;
+
+    double calories = 2276.30;
+    double cableLength = 37.798;
+    double profit = 32.9980;
+
+    char playerOne = 'p';
+    char startingPosition = 'a';
+    char correctAnswer = 'c';
 
     
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, age, numberOfStrings, optimalNumberOfGuitars, practicingGuitar, feedingCat, onABeach, a, cost, amountRequired, hardDriveSpace, fuelEfficiency, distance, calories, cableLength, profit, playerOne, startingPosition, correctAnswer); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -85,42 +107,82 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  1)
  */
 
+int getCatFood(int cost, bool inStock = true)
+{ 
+    ignoreUnused(cost, inStock);
+    return {};
+}
 /*
  2)
  */
-
+bool isGuitarStringInTune(float centAmount = 0.01f, char note = 'a')
+{ 
+    ignoreUnused(centAmount, note);
+    return{};
+}
 /*
  3)
  */
-
+float getPaycheckAmount(int hoursWorked, float wagePerHour = 20.5f)
+{ 
+    ignoreUnused(hoursWorked, wagePerHour);
+    return{};
+}
 /*
  4)
  */
-
+bool isMicrophoneTurnedOn(bool phantomPower = true, float gainAmount = 15.2f, bool clippingTheInterface = false)
+{ 
+    ignoreUnused(phantomPower, gainAmount, clippingTheInterface);
+    return{};
+}
 /*
  5)
  */
-
+void refillWater(int waterType, int amount)
+{ 
+    ignoreUnused(waterType, amount);
+}
 /*
  6)
  */
-
+float getTotalMonthlyProfit(double monthlyProfit, bool unexpectedExpenses = false)
+{ 
+    ignoreUnused(monthlyProfit, unexpectedExpenses);
+    return{};
+}
 /*
  7)
  */
-
+unsigned int getFood(char foodGrade, bool isFresh = false, unsigned int amountAtStore = 65784)
+{ 
+    ignoreUnused(foodGrade, isFresh, amountAtStore);
+    return{};
+}
 /*
  8)
  */
-
+int playMidi(char note, int velocity)
+{ 
+    ignoreUnused(note, velocity);
+    return{};
+}
 /*
  9)
  */
-
+bool isSignalPassingThrough(bool statusLightOn = false, int volumeLevel = 3, bool bypassOff = false)
+{ 
+    ignoreUnused(statusLightOn, volumeLevel, bypassOff);
+    return{};
+}
 /*
  10)
  */
-
+int getCoffee(int cupSize, bool hotTemp = true)
+{ 
+    ignoreUnused(cupSize, hotTemp);
+    return{};
+}
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
@@ -141,27 +203,27 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    auto catFoodAmount = getCatFood(1, true);
     //2)
-    
+    auto guitarStringInTune = isGuitarStringInTune(0.01f, 'a');
     //3)
-    
+    auto payCheckAmount = getPaycheckAmount(40, 20.5f);
     //4)
-    
+    auto microphoneOn = isMicrophoneTurnedOn(true, 15.2f, false);
     //5)
-    
+    refillWater(1, 33);
     //6)
-    
+    auto totalMonthlyProfit = getTotalMonthlyProfit(1765.012, false);
     //7)
-    
+    auto currentFood = getFood('a', true, 22);
     //8)
-    
+    auto midi = playMidi('a', 127);
     //9)
-    
+    auto signalPassing = isSignalPassingThrough(true, 100, true);
     //10)
+    auto gotCoffee = getCoffee(3, true);
     
-    
-    ignoreUnused(carRented);
+    ignoreUnused(carRented, catFoodAmount, guitarStringInTune, payCheckAmount, microphoneOn,totalMonthlyProfit, currentFood, midi, signalPassing, gotCoffee);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
